@@ -24,6 +24,7 @@ nav{
     font-weight: 600;
     color: #fff;
     transition: 0.3s ease-in-out;
+    padding: 0px 20px;                /*Prottektar makjkhane faak korsi */
 }
 
 #navbar li a:hover{
