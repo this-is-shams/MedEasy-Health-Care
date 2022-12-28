@@ -49,13 +49,13 @@ function Navbar() {
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="index.html">Service</a>
+            <a href="/services">Service</a>
           </li>
           <li>
-            <a href="index.html">Contact</a>
+            <a href="/contact">Contact</a>
           </li>
           <li>
-            <a href="index.html">Banner</a>
+            <a href="/bannar">Banner</a>
           </li>
         </ul>
       </div>
