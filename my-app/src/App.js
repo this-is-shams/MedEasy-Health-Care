@@ -9,7 +9,6 @@ function App() {
   return (
     <div>
       <Navbar/>
-
       <Routes>
       <Route path="/bannar" element={<Bannar/>}/>
       <Route path="/contact" element={<Contact/>}/>
