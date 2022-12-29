@@ -28,7 +28,7 @@ async function run(){
             const result = await serviceCollection.insertOne(service);
             // console.log(result);
             res.json(result)
-        });
+        })
 
         // update data into order collection
         app.put('/services/:id([0-9a-fA-F]{24})', async (req, res) => {
@@ -53,20 +53,39 @@ async function run(){
             )
             console.log('updating', id)
             res.json(result)
-        });
+        })
 
+        // get all services
+        app.get('/services', async (req, res) => {
+            const cursor = serviceCollection.find({});
+            const service = await cursor.toArray();
+            res.send(service);
+        })
 
+        // get a single service
+        app.get('/services/:id([0-9a-fA-F]{24})', async (req, res) => {
+            const id = req.params.id.trim();
+            const query = { _id: ObjectId(id) };
+            const service = await serviceCollection.findOne(query);
+            res.json(service);
+        })
 
+        // delete a service
+        app.delete('/services/:id([0-9a-fA-F]{24})', async (req, res) => {
+            const id = req.params.id.trim();
+            const query = { _id: new ObjectId(id) };
+            const result = await serviceCollection.deleteOne(query);
+            res.json(result);
+        })
 
-
-    } finally {
+    }finally{
 
     }
 }
 run().catch(console.dir)
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Run database file')
 })
 
 app.listen(port, () => {

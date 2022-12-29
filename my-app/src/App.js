@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Bannar from "./components/Bannar";
-import Contact from "./components/Contact";
-import Services from "./components/Services";
+import Navbar from "./components/Navigation/Navbar";
+import Bannar from "./components/Bannar/Bannar";
+import Contact from "./components/Contact/Contact";
+import Services from "./components/Services/Services";
 import "./style.css";
 
 function App() {
