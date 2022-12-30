@@ -5,6 +5,7 @@ import Card from "react-bootstrap/Card";
 
 const Service = (props) => {
   const {_id, name, price, des, img} = props.realService
+  const {handleDeleteService} = props
   return (
     <div>
         <Card style={{ width: "25rem" }}>
@@ -16,7 +17,9 @@ const Service = (props) => {
                 {des}
                 </Card.Text>
                 <Button variant="primary">Edit</Button>
-                <Button variant="primary" className='ms-4'>Delete</Button>
+                <Button
+                onClick={() => handleDeleteService(_id)}
+                 variant="primary" className='ms-4'>Delete</Button>
               </Card.Body>
         </Card>
     </div>
