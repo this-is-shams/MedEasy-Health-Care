@@ -13,7 +13,6 @@ const Services = () => {
   return (
     
     <div className='services'>
-      
       {services.map((service)=> (
       <Service realService={service}></Service>
       ))}

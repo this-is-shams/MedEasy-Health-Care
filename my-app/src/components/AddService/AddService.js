@@ -14,7 +14,7 @@ const AddService = () => {
           <Form.Control type="name" placeholder="" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Price</Form.Label>
+          <Form.Label>Cost</Form.Label>
           <Form.Control type="price" placeholder="" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">
