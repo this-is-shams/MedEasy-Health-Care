@@ -1,5 +1,54 @@
 .App {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.banner img {
+  height: 600px;
+}
+
+.banner p {
+  color: black;
+  text-align: center;
+}
+.banner h3 {
+  color: black;
+  text-align: center;
+  padding-top: 200px;
+}
+.para {
+  background-color: rgb(155, 220, 232);
+}
+
+.len h1{
+  text-align: center;
+  padding: 60px;
+}
+
+.serv{
+  padding: 50px;
+}
+.serv .second{
+  padding: 20px;
+  padding-left: 100px;
+}
+
+.serv .butleft Button{
+  float: left;
+  width: 100px;
+}
+
+.serv .butright Button{
+  float: right;
+  width: 100px;
+}
+
+.ser {
+  text-align: center;
+  padding: 50px;
+}
+
+.addser {
+  padding: 40px;
+  text-align: center;
+}

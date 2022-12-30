@@ -2,8 +2,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
-    padding: 20px 80px;
+    padding: 10px 60px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 #navbar{
@@ -12,7 +11,8 @@ nav{
     justify-content: center;
 }
 
-#navabr li{
+
+#navbar li{
     list-style: none;
     padding: 0 20px;
     position: relative;
@@ -22,7 +22,7 @@ nav{
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
-    color: #fff;
+    color: rgb(4, 4, 4);
     transition: 0.3s ease-in-out;
     padding: 0px 20px;
 }
@@ -31,8 +31,9 @@ nav{
     color: #17cf97;
 }
 
-.logo {
-    width: 10px;
-    height: 10px;
+nav img{
+
+    width: 100px;
+    height: 100px;
 }
 

@@ -1,10 +1,10 @@
 import "./NavbarStyle.css";
-import { ReactComponent as Logo } from './Care.svg';
+import Logo from './Care.png';
 
 
 function Navbar() {
   return (
-    <nav href="index.html">
+    <nav >
       <a>
       <div className="container">
           <img  src={Logo} />
@@ -13,7 +13,7 @@ function Navbar() {
       <div>
         <ul id="navbar">
           <li>
-            <a href="index.html">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="/services">Service</a>
@@ -23,6 +23,9 @@ function Navbar() {
           </li>
           <li>
             <a href="/bannar">Banner</a>
+          </li>
+          <li>
+            <a href="/AddService">Add Service</a>
           </li>
         </ul>
       </div>
