@@ -2,6 +2,7 @@ import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 
 const Service = (props) => {
   const {_id, name, price, des, img} = props.realService
@@ -16,9 +17,9 @@ const Service = (props) => {
                 <Card.Text>
                 {des}
                 </Card.Text>
-                <Button variant="primary">Edit</Button>
-                <Button
-                onClick={() => handleDeleteService(_id)}
+                <Link to={`/updateService/${_id}`}>
+                <Button variant="primary">Edit</Button></Link>
+                <Button onClick={() => handleDeleteService(_id)}
                  variant="primary" className='ms-4'>Delete</Button>
               </Card.Body>
         </Card>
