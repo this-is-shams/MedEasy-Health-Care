@@ -1,12 +1,11 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "bootstrap/dist/css/bootstrap.min.css";
 import b1 from "./b1.jpg";
 import b2 from "./b2.jpg";
 import b3 from "./b3.jpg";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 const Bannar = () => {
   return (

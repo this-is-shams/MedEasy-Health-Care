@@ -20,12 +20,21 @@ async function run(){
         await client.connect();
         const database = client.db("cygnus");
         const serviceCollection = database.collection("services");
+        const extraCollection = database.collection("extra");
         console.log('database connected')
 
-        // send services to the database
+        // send services to the database(services)
         app.post('/services', async (req, res) => {
             const service = req.body;
             const result = await serviceCollection.insertOne(service);
+            // console.log(result);
+            res.json(result)
+        })
+
+        // send services to the database(extra)
+        app.post('/extra', async (req, res) => {
+            const service = req.body;
+            const result = await extraCollection.insertOne(service);
             // console.log(result);
             res.json(result)
         })
@@ -55,18 +64,33 @@ async function run(){
             res.json(result)
         })
 
-        // get all services
+        // get all services (services)
         app.get('/services', async (req, res) => {
             const cursor = serviceCollection.find({});
             const service = await cursor.toArray();
             res.send(service);
         })
 
-        // get a single service
+        // get all services (extra)
+        app.get('/extra', async (req, res) => {
+            const cursor = extraCollection.find({});
+            const service = await cursor.toArray();
+            res.send(service);
+        })
+
+        // get a single service (services)
         app.get('/services/:id([0-9a-fA-F]{24})', async (req, res) => {
             const id = req.params.id.trim();
             const query = { _id: ObjectId(id) };
             const service = await serviceCollection.findOne(query);
+            res.json(service);
+        })
+
+        // get a single service (extra)
+        app.get('/extra/:id([0-9a-fA-F]{24})', async (req, res) => {
+            const id = req.params.id.trim();
+            const query = { _id: ObjectId(id) };
+            const service = await extraCollection.findOne(query);
             res.json(service);
         })
 
