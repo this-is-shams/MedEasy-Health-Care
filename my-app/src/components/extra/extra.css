@@ -1,6 +1,10 @@
-.review h1{
+.review h6{
     text-align: center;
 }
 .review h3{
     text-align: center;
+}
+.review{
+    display: flex;
+    justify-content: center;
 }

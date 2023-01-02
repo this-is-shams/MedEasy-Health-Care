@@ -9,12 +9,12 @@ const extra = (props) => {
   const {name, img, rev} = props.realService
   return (
     <div className='review'>
-      <Card style={{ width: "25rem" }}>
+      <Card style={{ width: "18rem" }} className='rev'>
               <Card.Img variant="top" src={img} />
               <Card.Body>
-                <Card.Title><h1>{name}</h1></Card.Title>
+                <Card.Title><h3>{name}</h3></Card.Title>
                 <Card.Text>
-                <h3>{rev}</h3>
+                <h6>{rev}</h6>
                 </Card.Text>
               </Card.Body>
         </Card>

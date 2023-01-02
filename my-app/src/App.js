@@ -9,6 +9,7 @@ import Home from "./components/Home/Home";
 import UpdateService from './components/UpdateService/UpdateService'
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import AddReview from "./components/AddReview/AddReview";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/AddService" element={<AddService />} />
         <Route path="/extra" element={<Extra />} />
         <Route path="/updateService/:serviceId" element={<UpdateService />} />
+        <Route path="/AddReview" element={<AddReview />} />
       </Routes>
       
     </div>

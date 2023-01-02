@@ -27,6 +27,9 @@ function Navbar() {
           <li>
             <a href="/AddService">Add Service</a>
           </li>
+          <li>
+            <a href="/AddReview">Add Review</a>
+          </li>
         </ul>
       </div>
     </nav>

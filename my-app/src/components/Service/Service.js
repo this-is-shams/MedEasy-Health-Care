@@ -8,7 +8,7 @@ const Service = (props) => {
   const {_id, name, price, des, img} = props.realService
   const {handleDeleteService} = props
   return (
-    <div>
+    <div className='ekta'>
         <Card style={{ width: "25rem" }}>
               <Card.Img variant="top" src={img} />
               <Card.Body>
